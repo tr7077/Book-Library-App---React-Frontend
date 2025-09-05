@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
+import { Navbar } from './layout/NavbarAndFooter/Navbar';
+import { Footer } from './layout/NavbarAndFooter/Footer';
+import { HomePage } from './layout/HomePage/HomePage';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <h1>Welcome motherfucker !!!</h1>
+    <div>
+      <Navbar />
+      <HomePage />
+      <Footer />
     </div>
   );
 }
 
-export default App;
+
